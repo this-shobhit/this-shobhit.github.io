@@ -206,10 +206,25 @@ nav {
 	margin-bottom: 0.9em;
 }
 
-.social li{
-	display: inline;
-	padding-right: 12px;
+
+.social ul {
+    list-style: none;   /* removes bullets */
+    padding: 0;
+    margin: 0;
 }
+
+.social li {
+    display: inline-block;  /* more stable than inline */
+    margin-right: 12px;     /* spacing */
+}
+
+.social img {
+    vertical-align: middle; /* fixes tiny misalignment */
+}
+
+
+
+
 
 .subnav li{
 	display: inline;
