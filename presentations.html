@@ -6,4 +6,65 @@ subnav_order: 1
 keyword: Presentations
 ---
 
-<p>Presentations and talks.</p>
+<p>Almost all my presentations. Might be very dated</p>
+
+<table class="tp-table">
+  <tbody>
+    {% assign pres = site.data.presentations | sort: "sort" | reverse %}
+
+    {% for p in pres %}
+      <tr>
+        <td>
+          <a href="{{ '/term-papers/' | append: p.file | relative_url }}">{{ p.title }}</a>
+        </td>
+        <td>{{ p.date }}</td>
+        <td>{{ p.note }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<style>
+.tp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.tp-table th {
+  text-align: left;
+  padding: 12px 10px;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tp-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #f0f0f0;  /* sleek light divider */
+}
+
+.tp-table tbody tr:hover {
+  background-color: #fafafa;  /* subtle hover */
+}
+
+.tp-table a {
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: 500;
+}
+
+.tp-table a:hover {
+  text-decoration: underline;
+}
+
+.tp-table td:nth-child(2) {   /* Date column */
+  color: #666;
+  white-space: nowrap;
+}
+
+.tp-table td:nth-child(3) {   /* Optional text */
+  color: #444;
+}
+</style>

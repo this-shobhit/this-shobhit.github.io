@@ -1,6 +1,17 @@
 # this-shobhit.github.io
 
-Personal site and GitHub Pages for Shobhit (Jekyll).
+Personal site 
+
+## Adding presentation
+
+
+Place your PDF file inside the term-papers/ folder. Then edit _data/presentations.yml and add an entry using the exact filename:
+
+Your_File_Name.pdf
+title: Presentation Title
+date: YYYY-MM-DD
+note: Optional description
+
 
 ## Structure
 

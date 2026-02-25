@@ -1,0 +1,53 @@
+- file: "DataMods_Slides.pdf"
+  title: "From Transformers to Weighted Automata: Towards the Verification of Large Language Models"
+  date: "November 2025"
+  note: "Datamod 2025 accepted paper"
+  sort: 2025-11
+
+- file: "Masters_Thesis_Presentation.pdf"
+  title: "Can Inductive Invariants be used to enhance efficiency of Bounded Model Checking (BMC)"
+  date: "May 2025"
+  note: "Masters Thesis"
+  sort: 2025-05
+
+- file: "Safe_Reinforcement_Learning_via_Shielding.pdf"
+  title: "Safe Reinforcement Learning Via Shielding"
+  date: "March 2025"
+  note: "Course Presentation"
+  sort: 2025-03
+
+- file: "Algorithmic_Game_theory_presentation.pdf"
+  title: "Finding Equilibria for two player games"
+  date: "December 2024"
+  note: "Course Presentation"
+  sort: 2024-12
+
+- file: "Semi_Deterministic_Buchi_Automata_Compliment.pdf"
+  title: "Complementing Semi Deterministic Büchi Automata"
+  date: "April 2024"
+  note: "Course Presentation"
+  sort: 2024-04
+
+- file: "Finite_Alternating_Automata_Paper.pdf"
+  title: "Alternating Finite Automata on Omega Words"
+  date: "February 2024"
+  note: "Course Presentation"
+  sort: 2024-02
+
+- file: "Stability_Analysis_of_SIR_Model-1.pdf"
+  title: "Stability Analysis of a SIR Model"
+  date: "May 2022"
+  note: "Course Presentation"
+  sort: 2022-05
+
+- file: "In_defense_of_Real_Numbers__NOM_.pdf"
+  title: "On choice of axiomatic systems"
+  date: "March 2022"
+  note: "Course Presentation"
+  sort: 2022-03
+
+- file: "How_reliable_is_published_research.pdf"
+  title: "How reliable is published research"
+  date: "April 2020"
+  note: "Course Presentation"
+  sort: 2020-04
