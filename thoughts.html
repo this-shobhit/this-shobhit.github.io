@@ -1,0 +1,30 @@
+---
+layout: default
+title: thoughts and reviews
+permalink: /thoughts/
+nav_order: 3
+---
+
+<article class="center">
+  <div class="writing">
+    <div class="content">
+      <header>
+        <h2>Thoughts and Reviews</h2>
+      </header>
+      <ul class="post-list">
+      {% for thought in site.thoughts reversed %}
+        <li class="post">
+          <h2><a href="{{ site.baseurl }}{{ thought.url }}">{{ thought.title }}</a></h2>
+          {% if thought.date %}
+            <aside>{{ thought.date | date: "%B %d, %Y" }}</aside>
+          {% endif %}
+          <div class="content">
+            {{ thought.excerpt | markdownify }}
+            <p><a href="{{ site.baseurl }}{{ thought.url }}">Read more →</a></p>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</article>

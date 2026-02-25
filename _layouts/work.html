@@ -1,0 +1,19 @@
+---
+layout: article-writing
+---
+
+{% assign work_subpages = site.pages | where: "layout", "work" | where_exp: "item", "item.subnav_order" | sort: "subnav_order" %}
+
+<ul class="subnav">
+{% for p in work_subpages %}
+  <li>
+    {% if p.title == page.title %}
+      <a style="font-weight: bold" href="{{ site.baseurl }}{{ p.url }}">{{ p.keyword }}</a>
+    {% else %}
+      <a href="{{ site.baseurl }}{{ p.url }}">{{ p.keyword }}</a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+{{ content }}

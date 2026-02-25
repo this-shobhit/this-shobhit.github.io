@@ -1,0 +1,31 @@
+---
+layout: default
+title: notes
+permalink: /notes/
+nav_order: 2
+collection_items: notes
+---
+
+<article class="center">
+  <div class="writing">
+    <div class="content">
+      <header>
+        <h2>Notes</h2>
+      </header>
+      <ul class="post-list">
+      {% for note in site.notes reversed %}
+        <li class="post">
+          <h2><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></h2>
+          {% if note.date %}
+            <aside>{{ note.date | date: "%B %d, %Y" }}</aside>
+          {% endif %}
+          <div class="content">
+            {{ note.excerpt | markdownify }}
+            <p><a href="{{ site.baseurl }}{{ note.url }}">Read more →</a></p>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</article>

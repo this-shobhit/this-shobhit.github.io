@@ -4,8 +4,8 @@ _site/
 *-cache/
 .jekyll-metadata
 *.gem
-Gemfile
-Gemfile.lock
 .analysis
 *.swp
 *~
+*.log
+outreach.log

@@ -1,6 +1,12 @@
 collections:
   experiments:
     output: true
+  notes:
+    output: true
+    permalink: /notes/:name/
+  thoughts:
+    output: true
+    permalink: /thoughts/:name/
 
 permalink: /:year/:month/:day/:title/
 
@@ -10,3 +16,15 @@ plugins:
   - jekyll-feed
 
 excerpt_separator: <!-- more -->
+
+defaults:
+  - scope:
+      path: "_notes"
+      type: "notes"
+    values:
+      layout: "article-writing"
+  - scope:
+      path: "_thoughts"
+      type: "thoughts"
+    values:
+      layout: "article-writing"
